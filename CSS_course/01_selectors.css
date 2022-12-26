@@ -1,3 +1,40 @@
-h3 {
-    color: blueviolet;
+/* Уникальный селектор */
+* {
+    font-style: oblique; /* шрифт на всей странице: "oblique" */
+}
+
+/* Tag Name (селектор по имени)*/
+body {
+    background: #ddd; /* фон элемента */   
+}
+
+/* Class (селектор по классу) */
+.card {
+    padding: 10px; /* отступы */
+    color: #fff; /* цвет текста */
+}
+
+/* селектор от родительского тега к дочернему */
+.card p {
+    font-size: 25px;
+}
+
+/* Id (селектор по id */
+#header {
+    border: 1px solid; /* элемент в рамке */
+    background: #aaa; /* фон элемента */
+    padding: 12px; /* внутренние отступы(поля) со всех сторон элемента */
+}
+
+/* множественный селектор */
+#header, .card {
+    margin-bottom: 10px; /* нижний отступ элемента */
+}
+
+.html {
+    background: coral;
+}
+
+.css {
+    background: cornflowerblue;
 }

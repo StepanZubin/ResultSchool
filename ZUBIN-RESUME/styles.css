@@ -9,13 +9,32 @@ body {
     background: rgb(255, 239, 216);
 }
 
+
+ /* таблица */
+table {
+    border-collapse: collapse;
+    /*убираем пустые промежутки между ячейками*/
+    border: 3px solid rgba(0, 0, 255, 0.451);
+    /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    width: 600px;
+    /* ширина таблицы */
+}
+
+ th, td {
+    border: 2px solid rgba(0, 0, 255, 0.451);
+    /* границы для всей таблицы */
+    padding: 10px 15px;
+    /* высота рядов таблицы */
+ }
+
 h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-thead tr{
+
+/* thead tr{
     text-decoration-line: underline;
-}
+} */
 
 tbody tr {
     font-style: oblique;

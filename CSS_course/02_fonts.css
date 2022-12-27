@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    /*font-family: Verdana, 'Geneva', sans-serif; /* шрифт */
+    font-family: 'Roboto', sans-serif; /* шрифт */
+    font-size: 25px; /* размер шрифта */
+    line-height: 1.1em; /* можно 25px */
+    font-weight: normal; /* выделение шрифта (м-но цифрами: 400=normal, 900=bold)*/
+    /* text-decoration: underline; /* декорация для текста */
+    /* font-style: italic; /* наклонный текст */
+    /* letter-spacing: 5px; /* расстояние м-у символами */
+    /* word-spacing: 20px; /* расстояние м-у словами */ 
+}
+
+/* можно и так */
+/* .css p {
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+}  */

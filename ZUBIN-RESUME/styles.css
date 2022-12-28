@@ -2,11 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
 body {   
     font-family: 'Roboto Mono', 'Arial', 'Helvetica', sans-serif;
+    /* задали шрифт (тип), со страхующими типами */
     font-size: 21px;
+    /* размер шрифта */
     font-weight: 400;
+    /* выделение шрифта: 400=normal */
     letter-spacing: 1px;
     /* word-spacing: 4px; */
-    background: rgb(255, 239, 216);
+    background: #fff4e8; 
+    /* цвет фона (взят с понравившегося резюме) */
+}
+
+/* Заголовки */
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* тип шрифта + резервные типы */
+    color: #603702; /* Мои увлечения, Опыт работы */
+}
+h1 {
+    color: #6b4311; /* Степан Зюбин */
+}
+h4 {
+    color: #643b08; /* Соц.сети, Связаться со мной */
 }
 
 
@@ -14,32 +31,22 @@ body {
 table {
     border-collapse: collapse;
     /*убираем пустые промежутки между ячейками*/
-    border: 3px solid rgba(0, 0, 255, 0.451);
+    border: 3px solid #51504f;
     /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
     width: 600px;
     /* ширина таблицы */
 }
-
  th, td {
-    border: 2px solid rgba(0, 0, 255, 0.451);
+    border: 2px solid #726e69;
     /* границы для всей таблицы */
-    padding: 10px 15px;
+    padding: 14px 15px;
     /* высота рядов таблицы */
- }
-
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ } 
+thead tr {
+    color: #2c2927;
 }
-
-
-/* thead tr{
-    text-decoration-line: underline;
-} */
-
 tbody tr {
     font-style: oblique;
+    color: #413f3d;
 }
 
-h1 {
-    color: rgba(0, 0, 255, 0.451);
-}

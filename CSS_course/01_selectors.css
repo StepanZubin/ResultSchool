@@ -8,9 +8,10 @@ body {
     background: #ddd; /* фон элемента */   
 }
 
+
+
 /* Class (селектор по классу) */
-.card {
-    padding: 10px; /* отступы */
+.html, .css{
     color: #fff; /* цвет текста */
 }
 
@@ -29,12 +30,19 @@ body {
 /* множественный селектор */
 #header, .card {
     margin-bottom: 10px; /* нижний отступ элемента */
+    padding: 10px; /* отступы */
 }
 
 .html {
-    background: coral;
+    background: #e36629; 
+    /* цвет взят пипеткой с логотипа html */
 }
 
 .css {
-    background: cornflowerblue;
+    background: #2760e5;
+    /* цвет взят пипеткой с логотипа css */
+}
+
+.colors {
+    background: #fff;
 }

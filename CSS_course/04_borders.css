@@ -1,0 +1,46 @@
+.border-1 {
+    /* border-width: 2px; /* толщина границы */
+    /* border-style: solid; /* стиль границы */
+    /* (dotted, dashed, double, groove и прочие) */
+    /* border-color: red; /* цвет границы */
+    border: 2px solid red;
+    /* запись одной строкой */
+
+    border-radius: 7px; /* округлая граница */
+}
+
+.figure-1 {
+    /* круг */
+    width: 200px; /* ширина */
+    height: 200px; /* высота */
+    background: blueviolet;
+    border-radius: 50%;
+}
+.figure-2 {
+    /* овал */
+    width: 500px;
+    height: 200px; 
+    background: brown;
+    border-radius: 50%;
+}
+
+
+.border-2 {
+    border-bottom: 2px solid blue; /* top, right, left */
+    /* нижняя граница (bottom)*/
+    border-bottom-right-radius: 20px;
+    /* закругляем нижнюю границу: справа */
+
+}
+
+.border-3 {
+    border-left: 6px solid red;
+    /* границм слева (можно без неё) */
+    background: lightsalmon;
+    /* заливка границы цветом: lightsalmon */
+    padding-left: 10px;
+    /* отступ текста от левой границы */
+    color: indigo;
+    /* цвет текста */
+
+}

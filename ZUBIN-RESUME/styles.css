@@ -9,8 +9,22 @@ body {
     /* выделение шрифта: 400=normal */
     letter-spacing: 1px;
     /* word-spacing: 4px; */
-    background: #fff4e8; 
+    /* background: #fff4e8;  */
     /* цвет фона (взят с понравившегося резюме) */
+}
+
+.card {
+    border: 2px solid #dac7b2;
+    /* рамка(граница): тощина, сплошная, цвет */
+    border-radius: 8px;
+    /* скругление всех углов границы */
+    background: #fff4e8;
+    /* заливка блока цветом */
+    padding-left: 10px;
+    /* отступ данных блока от левого края границы */
+    padding-top: 10px;
+    /* отступ данных блока от верхнего края границы */
+    padding-bottom: 10px;
 }
 
 /* Заголовки */

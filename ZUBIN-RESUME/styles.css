@@ -14,10 +14,13 @@ body {
 }
 
 .card {
-    border: 2px solid #dac7b2;
+    border-top: 2px solid #dac7b2; 
+    border-left: 2px solid #dac7b2; 
+    border-bottom: 2px solid #dac7b2;
     /* рамка(граница): тощина, сплошная, цвет */
-    border-radius: 8px;
-    /* скругление всех углов границы */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* скругление углов границы */
     background: #fff4e8;
     /* заливка блока цветом */
     padding-left: 10px;

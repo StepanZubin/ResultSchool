@@ -14,12 +14,11 @@ body {
 }
 
 .card {
-    border-top: 2px solid #dac7b2; 
-    border-left: 2px solid #dac7b2; 
-    border-bottom: 2px solid #dac7b2;
+    width: 650px;
+
+    border: 2px solid #dac7b2; 
     /* рамка(граница): тощина, сплошная, цвет */
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     /* скругление углов границы */
     background: #fff4e8;
     /* заливка блока цветом */
@@ -50,6 +49,7 @@ table {
     /*убираем пустые промежутки между ячейками*/
     border: 3px solid #51504f;
     /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    border-radius: 15px;
     width: 600px;
     /* ширина таблицы */
 }

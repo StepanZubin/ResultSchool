@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
-.container {  
-    max-width: 800px; /* ширина (max - для адаптации) */
-    margin: auto; /* авто поля блока */
-    
+body {
     font-family: 'Roboto Mono', 'Arial', 'Helvetica', sans-serif;
     /* задали шрифт (тип), со страхующими типами */
     font-size: 21px;
@@ -12,7 +9,15 @@
     /* выделение шрифта: 400=normal */
     letter-spacing: 1px;
     /* расстояние м-у символами */
+    background: #d5d4d4;
 }
+
+
+.container {  
+    max-width: 800px; /* ширина (max - для адаптации) */
+    margin: auto; /* авто поля блока */
+}
+
 
 .card {
     border: 2px solid #dac7b2; 
@@ -22,13 +27,16 @@
     background: #fff4e8;
     /* заливка блока цветом */
 
-    margin: 1px;
-    /* внений отступ блоков */
+    margin-bottom: 1px; /* лучше использовать: ""-bottom */
+    /* внений нижний отступ блоков */
     padding: 10px;
     /* отступ данных блока со всех сторон */
 }
 
+
 .foto {
+    width: 263px;
+    /* корректировка размера фото */
     border: 4px solid #dac7b2; 
     /* рамка(граница): тощина, сплошная, цвет */
     border-radius: 10px;
@@ -37,6 +45,7 @@
     box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.25);
     /* тень от фото */
 }
+
 
 /* Заголовки */
 h1 {
@@ -51,12 +60,47 @@ h4 {
     color: #643b08; /* Соц.сети, Связаться со мной */
 }
 
+
 .line {
     margin: 4px 10px;
     /* внешние отступы: top & bottom / right & left */
     border: 1px dashed black; 
     /* рамка(граница): тощина, сплошная, цвет */
 }
+
+
+/* псевдоселекторы */
+a {
+    color: #2c2927;
+    text-decoration: none; /* без нижнего подчёркивания */
+}
+a:hover {
+    text-decoration: underline; /* при наведении курсора -> нижнее подчёркивание */
+    color: #6b4311; /* при наведении курсора, ссылка меняет цвет */
+}
+a:active {
+    color: red;
+}
+a:visited {
+    color: blueviolet;
+    /* цвет, если по ссылке переходили */
+}
+
+
+/* кнопка */
+.btn {
+    background: #2c2927; /* цвет кнопки */
+    padding: 10px 28px; /* переопределили стандартный размер кнопки в свой */
+    color: #fff; /* цвет текста в кнопке */
+    border-radius: 5px; /* округление кнопки */
+    font-family: inherit; /* наследовать наши шрифты заданные на странице */
+    font-size: 20px; /* переопределение размера текста в кнопке */
+    cursor: pointer; /* при наведении курсор меняется */
+}
+.btn:hover {
+    opacity: .8; /* при наведении курсора кнопка реагирует "затуманиванием" */
+}
+
 
  /* таблица */
 table {
@@ -73,7 +117,7 @@ table {
     /* высота рядов таблицы */
  } 
 thead tr {
-    color: #2c2927;
+    color: #2c2927; /* цвет ссылок */
 }
 tbody tr {
     font-style: oblique;

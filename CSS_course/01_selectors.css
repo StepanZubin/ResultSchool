@@ -15,6 +15,10 @@ body {
     color: #fff; /* цвет текста */
 }
 
+.card {
+    background: #fff;
+}
+
 /* селектор от родительского тега к дочернему */
 .card p {
     /* font-size: 25px; */

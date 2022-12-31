@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0; /*поле блока*/
+        }
+
+        .container {
+            max-width: 750px; 
+            /*ширина (max - для адаптации) */
+            margin: auto;
+            /*авто поля блока*/
+        }
+
+        .box {
+            background: darkorchid; /*фон блока*/
+            color: #fff; /*цвет текста в блоке*/
+
+            padding: 10px; 
+            /*внутренние отступы (в блоке)*/
+            /* padding: 10px 40px;  */
+            /*top & bottom / left & right*/
+            /* padding: 10px 40px 20px 30px; */
+            /*top & right & bottom & left*/
+
+            border: 4px solid  red; /*границы блока*/
+            margin: 10px; /*внешний отступ блока*/
+        }
+
+        .blocks {
+            width: 100%;
+        }
+
+        .block {
+            width: 25%; /*ширина одного блока (м-но: 20px)*/
+            height: 50px; /*высота*/
+            background: #000;
+            float: left; /*выстраивание элементов в линию*/
+            border: 4px solid green; /*внешние границы*/
+
+            box-sizing: border-box; 
+            /*пересчёт 4х25=100 с учётом внеш.границ 4px*/
+        }
+    </style>
+</head>
+<body class="container">
+    
+    <div class="box">
+        <h2>Box Model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Iste, nostrum.</p>
+    </div>
+
+    <div class="box">
+        <h2>Box Model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Iste, nostrum.</p>
+    </div>
+
+
+    <div class="bloсks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</body>
+</html>

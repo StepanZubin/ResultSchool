@@ -1,0 +1,68 @@
+.list {
+    /* обнулим поля */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* убрали точки пунктов списка */
+}
+
+.list li {
+    margin-bottom: 8px; 
+    /* нижний отступ элементов списка */
+    border-bottom: 1px dashed grey;
+    /* линия снизу элементов списка */
+}
+
+.table {
+    background: #fff;
+    width: 100%;
+    /* ширина таблицы 100% */
+}
+
+.table td {
+    text-align: center;
+    /* текст в ячейках таблицы - по центру */
+    padding-bottom: 10px;
+    /* отступы снизу строк */
+}
+
+.table td:hover {
+    background: #eeefff;
+    /* при наведении курсором эл-нт таблицы подсвечмвается */
+}
+
+/* подсвечиваем нечётные строки(tr) таблицы */
+.table tr:nth-child(odd) { /* even -> чётные */
+    background: #eee;
+}
+
+/* подсвечиваем 1-й b 3-q столбецы(td) таблицы */
+.table td:nth-child(1), .table td:nth-child(3) {
+    background: #fffeee;
+}
+
+.navbar {
+    background: lightcoral;
+    margin-bottom: 10px;
+    /* padding: 10px 20px; */
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex; /* ссылки в линию (вместо - столбцом) */
+
+}
+.navbar ul li {
+    margin-right: 10px; /* отступ у ссылок справа */
+    padding: 10px;
+}
+.navbar ul li:hover {
+    background: #ea6767; /* выделение цветом при наведении */
+}
+.navbar ul li a:hover {
+    color: chartreuse;
+    font-size: 2rem;
+}
+.navbar ul li:last-child {
+    margin-right: 0;
+}

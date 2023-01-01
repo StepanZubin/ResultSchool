@@ -1,0 +1,28 @@
+/* inline, block, inline-block */
+
+.inline li {
+    /* display: block; /* элементы без точек */
+    display: inline;
+    /* делаем все стррки списка в одну строку */
+}
+
+.box {
+    width: 32%;
+    /* сузили ширину контента */
+    border: 1px dashed black;
+    /* визуализировали границы блока */
+    background: #f4f4f4;
+    /* цвет блока */
+    display: inline-block;
+    /* выставляем блоки в линию */
+    box-sizing: border-box; /* ? */
+}
+
+.img {
+    width: 100px;
+    /* изменили размер картинки */
+    display: block;
+    /* картинка по центру */
+    margin: 40px auto;
+    /* отступы: top-bottom 40% left-right auto */
+}

@@ -47,6 +47,14 @@ body {
 }
 
 
+.heading {
+    display: flex;
+}
+.info {
+    margin-left: 40px;
+}
+
+
 /* Заголовки */
 h1 {
     color: #6b4311; /* Степан Зюбин */
@@ -64,7 +72,7 @@ h4 {
 .line {
     margin: 4px 10px;
     /* внешние отступы: top & bottom / right & left */
-    border: 1px dashed black; 
+    border: 1px dashed rgb(151, 151, 151); 
     /* рамка(граница): тощина, сплошная, цвет */
 }
 
@@ -136,4 +144,40 @@ a:active {
     /* вторая строка табдицы с жирным текстом */
     font-weight: bold;
     background: #f5e8d9;
+}
+
+
+.form h4 {
+    text-align: center;
+}
+.form-row {
+    margin-bottom: 12px;
+    display: flex;
+}
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+.form-group label {
+    display: block; 
+    /* перенос строк */
+    font-size: 18px;
+    /* размер шрифта */
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    /* удаление границы */
+    background: transparent;
+    /* прозрачный фон */
+    border-bottom: 1px dashed rgb(151, 151, 151);
+    padding: 15px 0 10px;
+    outline: none;
+    /* убрали подсвечивание границы при нажатии */
+    font-family: inherit;
+    /* шрифты как заданные на сайте */
 }

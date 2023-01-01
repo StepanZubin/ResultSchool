@@ -16,14 +16,21 @@
 
         <div class="card heading"> <!-- шапка -->
             <img class="foto" src="photo_400х400.png" alt="Фото: Степан">
-            <h1>Степан Зюбин</h1>
+            <form class="info">
+                <h1>Степан Зюбин</h1>
+                <div  class="aboutMe"> <!-- обо мне -->
+                    <p>Обучаюсь <strong>HTML&CSS</strong> в онлайн-школе <strong>ResultSchool</strong></p>
+                </div>
+                <div class="socialNetwork"> <!-- социальные сети -->
+                    <h4>Соц.сети:</h4>
+                    <a href="https://vk.com/id567133339" target="_blank">vk.com</a>
+                    <a href="https://t.me/Stepan_Zubin" target="_blank">telegram</a>
+                </div>
+            </form>
+
         </div>
         <hr class="line">
-    
-        <div  class="card aboutMe"> <!-- обо мне -->
-            <p>Обучаюсь <strong>HTML&CSS</strong> в онлайн-школе <strong>ResultSchool</strong></p>
-        </div>
-         
+
         <div class="card hobbies"> <!-- увлечения -->
             <h3>Мои увлечения:</h3>
             <ol class="list">
@@ -48,32 +55,29 @@
                 </tr>
             </table>            
         </div>
-        
-        <div class="card socialNetwork"> <!-- социальные сети -->
-            <h4>Соц.сети:</h4>
-            <a href="https://vk.com/id567133339" target="_blank">vk.com</a>
-            <a href="https://t.me/Stepan_Zubin" target="_blank">telegram</a>
-        </div>
     
-        <div class="card connection"> <!-- связь -->
+        <form class="form connection"> <!-- связь -->
             <h4>Связаться со мной</h4>
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
             </div>
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
-            <div>
+            
+            <div class="form-group">
                 <label for="message">Ваше сообщение:</label>
-                <br>
                 <textarea id="message" cols="41" rows="6" placeholder="Введите сообщение..."></textarea>
             </div>
             <button class="btn" type="submit">Отправить</button>
-        </div>
+        </а>
 
-    </div>
+        </form>
      
 </body>
 </html>

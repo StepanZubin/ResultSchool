@@ -15,7 +15,7 @@ body {
 
 .container {  
     max-width: 800px; /* ширина (max - для адаптации) */
-    margin: auto; /* авто поля блока */
+    margin: auto; /* авто поля блока (чтобы было по центру)*/
 }
 
 
@@ -58,6 +58,9 @@ body {
     .heading {
         display: block;
         text-align: center;
+    }
+    .info {
+        margin-left: 0;
     }
 }
 
@@ -151,6 +154,11 @@ a:active {
     font-weight: bold;
     background: #f5e8d9;
 }
+@media (max-width: 690px) {
+    .table {
+        margin: auto;
+    }
+}
 
 
 .form h4 {
@@ -186,4 +194,9 @@ a:active {
     /* убрали подсвечивание границы при нажатии */
     font-family: inherit;
     /* шрифты как заданные на сайте */
+}
+@media (max-width: 690px) {
+    .form-row {
+        display: block;
+    }
 }

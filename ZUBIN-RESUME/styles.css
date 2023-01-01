@@ -53,7 +53,13 @@ body {
 .info {
     margin-left: 40px;
 }
-
+/* адаптив под маленький экран */
+@media (max-width: 690px) {
+    .heading {
+        display: block;
+        text-align: center;
+    }
+}
 
 /* Заголовки */
 h1 {

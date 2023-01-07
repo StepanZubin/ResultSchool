@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Roboto Mono', 'Arial', 'Helvetica', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    background: #f7f7f7;
+}
+
+.container {  
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    border: 2px solid #95c451; 
+    border-radius: 8px;
+    background: #ffe9b1;
+
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+.foto {
+    width: 263px;
+    border: 2px solid #6d9335; 
+    border-radius: 10px;
+
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.head {
+    display: flex;
+}
+.aboutMe {
+    margin-left: 40px;
+}
+@media (max-width: 690px) {
+    .head {
+        display: block;
+        text-align: center;
+    }
+    .aboutMe {
+        margin-left: 0;
+    }
+}
+
+h1 {
+    color: #3e3f3a; 
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3e3f3a;
+}
+h4 {
+    color: #3e3f3a;
+}
+
+.list li {
+    margin-bottom: 6px;
+    margin-left: 50px;
+}
+
+a {
+    color: #3699d9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; 
+    color: #3b4476; 
+}
+a:active {
+    color: #f27d42; 
+}
